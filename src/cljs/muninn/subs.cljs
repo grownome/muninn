@@ -10,3 +10,8 @@
  ::active-panel
  (fn [db _]
    (:active-panel db)))
+
+(re-frame/reg-sub
+ ::user
+ (fn [db _]
+   (:user db)))

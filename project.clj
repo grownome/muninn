@@ -8,8 +8,8 @@
                  [cljs-react-material-ui "0.2.48"]
                  [cljsjs/react "15.6.1-1"]
                  [cljsjs/react-dom "15.6.1-1"]
-                 [com.kenbier/victory-cljs "0.1.0"]
-                 [com.degal/re-frame-firebase "0.7.0-SNAPSHOT"]
+                 [cljsjs/victory "0.17.0-0"]
+                 [com.degel/re-frame-firebase "0.7.0-SNAPSHOT"]
                  [ns-tracker "0.3.0"]]
 
   :plugins [[lein-cljsbuild "1.1.5"]
@@ -37,7 +37,7 @@
   {:dev
    {:dependencies [[binaryage/devtools "0.9.4"]
                    [day8.re-frame/trace "0.1.14"]
-                   [figwheel-sidecar "0.5.13"]
+                   [figwheel-sidecar "0.5.14"]
                    [com.cemerick/piggieback "0.2.2"]]
 
     :plugins      [[lein-figwheel "0.5.13"]
