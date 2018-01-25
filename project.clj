@@ -5,6 +5,11 @@
                  [re-frame "0.10.2"]
                  [secretary "1.2.3"]
                  [garden "1.3.2"]
+                 [cljs-react-material-ui "0.2.48"]
+                 [cljsjs/react "15.6.1-1"]
+                 [cljsjs/react-dom "15.6.1-1"]
+                 [com.kenbier/victory-cljs "0.1.0"]
+                 [com.degal/re-frame-firebase "0.7.0-SNAPSHOT"]
                  [ns-tracker "0.3.0"]]
 
   :plugins [[lein-cljsbuild "1.1.5"]
