@@ -8,7 +8,7 @@
                  [cljs-react-material-ui "0.2.48"]
                  [cljsjs/react "15.6.1-1"]
                  [cljsjs/react-dom "15.6.1-1"]
-                 [cljsjs/victory "0.17.0-0"]
+                 [cljsjs/victory "0.24.2-0"]
                  [com.degel/re-frame-firebase "0.7.0-SNAPSHOT"]
                  [ns-tracker "0.3.0"]]
 

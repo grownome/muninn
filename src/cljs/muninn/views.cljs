@@ -1,15 +1,35 @@
 (ns muninn.views
   (:require [re-frame.core :as re-frame]
             [muninn.subs :as subs]
-            ))
-
+            [cljsjs.material-ui]
+            [cljsjs.victory :as v]
+            [cljs-react-material-ui.core :refer [get-mui-theme color]]
+            [cljs-react-material-ui.reagent :as ui]
+            [cljs-react-material-ui.icons :as ic]
+            [reagent.core :as r]))
 
 ;; home
 
 (defn home-panel []
   (let [name (re-frame/subscribe [::subs/name])]
-    [:div (str "Hello from " @name ". This is the Home Page.")
-     [:div [:a {:href "#/about"} "go to About Page"]]]))
+    [ui/mui-theme-provider
+     {:mui-theme (get-mui-theme {:palette {:text-color (color :green600)}})}
+     [:div
+      [ui/app-bar {:title "Grownome"}]
+      [ui/paper
+       [ui/card
+        [ui/card-header {:title "A sensor"}]
+        [(r/as-element v/VictoryPie)]
+        [ui/card-text "This is your plant data"]]
+       ]
+            ]
+
+     ]
+
+
+
+    ))
+
 
 
 ;; about
